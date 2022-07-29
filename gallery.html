@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Farm House site" />
+    <link rel="icon" href="assets/images/Royal-logo-short.svg" type="image/svg" sizes="64x64">
+    <title>Home | Royal farm country side Resort</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+        crossorigin="anonymous" />
+    <!-- light gallery-css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/css/lightgallery.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/css/lg-thumbnail.min.css"
+        crossorigin="anonymous" />
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        crossorigin="anonymous" />
+    <!-- LightGallery -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css"
+        crossorigin="anonymous" /> -->
+    <!-- Aos Animation css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" />
+    <!-- Style css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="overlayDoor"></div>
+        <div class="overlayContent">
+            <div class="loader">
+                <img src="assets/images/Royal-logo-white.svg" alt="loading logo" />
+            </div>
+        </div>
+    </div>
+    <!-------- Header --------->
+    <header>
+        <!-------- Navbar --------->
+        <nav class="navbar navbar-expand-md p-0">
+            <div class="container">
+                <a class="navbar-brand mr-0" href="./index.html"><img src="assets/images/Royal-logo-white.svg"
+                        alt="Royal farm logo" /></a>
+                <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                    <li class="nav-item h-btn">
+                        <a class="nav-link" href="index.html" style="color: white;">Back to Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-------- Navbar End --------->
+    </header>
+    <main>
+        <!-- tab on change -->
+        <div class="container s_pad">
+
+            <div class="tab_container">
+                <div class="tabs_list">
+                    <ul class="tabs">
+                        <li class="tab-link current"><a href="#tab-2"> More Details</a></li>
+                        <li class="tab-link"><a href="#tab-3">Gallery</a></li>
+                        <li class="tab-link"><a href="#tab-4">Amenities</a></li>
+                    </ul>
+                </div>
+                <!-- Description ST -->
+                <div class="tab_items">
+                    <div id="tab-2" class="tab-content current s_pad">
+                        <h2 class="sec_title g-sec " data-aos="fade-up" data-aos-duration="500"><span>Description</span>
+                        </h2>
+                        <div class="loading">
+                            <svg class="circular" viewBox="25 25 50 50">
+                                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2"
+                                    stroke-miterlimit="10" />
+                            </svg>
+                        </div>
+                        <p id="description"></p>
+                    </div>
+                    <!-- Description ED -->
+                    <div id="tab-3" class="tab-content current s_pad">
+                        <h2 class="sec_title g-sec " data-aos="fade-up" data-aos-duration="500"><span>Our Gallery</span>
+                        </h2>
+                        <div class="loading">
+                            <svg class="circular" viewBox="25 25 50 50">
+                                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2"
+                                    stroke-miterlimit="10" />
+                            </svg>
+                        </div>
+                        <!-- gallery ST-->
+                        <div class="gallery-img" id="gallery-img">
+
+                        </div>
+                    </div>
+                    <!-- gallery Ed-->
+                    <div id="tab-4" class="tab-content current s_pad">
+                        <h2 class="sec_title g-sec " data-aos="fade-up" data-aos-duration="500"><span>Amenities</span>
+                        </h2>
+                        <div class="loading">
+                            <svg class="circular" viewBox="25 25 50 50">
+                                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2"
+                                    stroke-miterlimit="10" />
+                            </svg>
+                        </div>
+                        <!-- amenities ST-->
+                        <div class="amenities-imgs-list">
+                            <ul class="amenities-list" id="amenities-list">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- amenities ED-->
+
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; Copyright 2021. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+    <!--lightGallery js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/lightgallery.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/plugins/thumbnail/lg-thumbnail.min.js"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous"></script>
+    <!-- <script src="./assets/js/main.js"></script> -->
+    <script>
+        $(".hamburger").click(function () {
+            $(this).addClass("open");
+            $(".navbar-collapse").addClass("show");
+        });
+        $(".cross").click(function () {
+            $(".hamburger").removeClass("open");
+            $(".navbar-collapse").removeClass("show");
+        });
+
+        // Page Loader
+        setTimeout(function () {
+            $(".overlay, body").addClass("loaded");
+        }, 2000);
+
+        // Will remove overlay after 1min for users cannot load properly.
+        setTimeout(function () {
+            $(".overlay").css({ display: "none" });
+        }, 4000);
+
+        $('.tab_container [href^="#"]').click(function () {
+            var sidebarId = $(this).attr("href");
+            var nav = $(".tabs_list").outerHeight();
+            $("html, body").animate(
+                { scrollTop: $(sidebarId).offset().top - nav },
+                1000
+            );l
+        });
+        $(".nav-item").click(function () {
+            $(this).parent().find("li").removeClass("active");
+            $(this).addClass("active");
+        });
+        // Sticky Header
+        var nav = $("header").outerHeight();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > nav + 40) {
+                $(".tabs_list").addClass("tabFixed");
+                $("main").css("paddingTop", nav);
+            } else {
+                $(".tabs_list").removeClass("tabFixed");
+                $("main").css("paddingTop", "0");
+            }
+        });
+        $("ul.tabs li").click(function () {
+            $("ul.tabs li").removeClass("current");
+            $(this).addClass("current");
+        });
+        AOS.init({ once: true });
+        var url = new URL(window.location.href);
+        var unitid = url.searchParams.get("unit");
+        var companyid = url.searchParams.get("company");
+        const url1 = "http://farmhouse.timetrackpk.com/api/FrontEnd/";
+        $.get(url1 + "Gallerydetails?unitid=" + unitid + "&companyid=" + companyid + "", function (data, status) {
+            console.log(data);
+            $("#description").append(data.description);
+            let gallery = "";
+            $.map(data.image, function (val, i) {
+                if (val !== null) {
+                    gallery += "<a href='data:image/png;base64," + val + "' >";
+                    gallery += "<img src='data:image/png;base64," + val + "' alt='gallery-images'>";
+                    gallery += "</a>";
+                }
+            });
+            $("#gallery-img").append(gallery);
+            //amenities
+            let amenities = "";
+            $.map(data.amenities, function (val, i) {
+                if (val !== null) {
+                    amenities += '<li>' + val.amenityName + '</li>';
+                }
+            });
+            $("#amenities-list").append(amenities);
+            if ($('#description').children()) {
+                $('.loading').fadeOut()
+                console.log('description has children')
+            }
+            lightGallery(document.getElementById('gallery-img'), {
+                plugins: [lgThumbnail],
+                thumbnail: true,
+            });
+        })
+
+    </script>
+</body>
+
+</html>
